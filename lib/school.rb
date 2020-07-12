@@ -10,5 +10,6 @@ class School
       roster[grade]<<numb_st
     else
       roster[grade]+=numb_st
+    end
   end
 end
