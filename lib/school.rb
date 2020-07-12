@@ -5,11 +5,8 @@ class School
   end
   attr_reader :name, :roster
   roster={}
-  def add_student(grade,numb_st)
-    if roster[grade]==nil
-      roster[grade]<<numb_st
-    else
-      roster[grade]+=numb_st
-    end
+  def add_student(student,grade)
+      roster[grade]<<student
   end
+  def grade(grad)
 end
