@@ -6,6 +6,9 @@ class School
   attr_reader :name, :roster
   roster={}
   def add_student(grade,numb_st)
-    roster[grade]+=numb_st
+    if roster[grade]==nil
+      roster[grade]<<numb_st
+    else
+      roster[grade]+=numb_st
   end
 end
