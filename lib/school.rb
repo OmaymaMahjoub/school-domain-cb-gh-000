@@ -6,6 +6,6 @@ class School
   attr_reader :name, :roster
   roster={}
   def add_student(grade,numb_st)
-    school.
+    roster[grade]+=numb_st
   end
 end
